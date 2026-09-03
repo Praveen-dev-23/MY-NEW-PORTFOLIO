@@ -14,6 +14,7 @@ const Navbar = () => {
       
       <div className="flex gap-6 md:gap-10 font-mono text-xs tracking-widest">
         <a href="#work" className="hover:opacity-70 transition-opacity">WORK</a>
+        <a href="#posters" className="hover:opacity-70 transition-opacity">POSTERS</a>
         <a href="#about" className="hover:opacity-70 transition-opacity">ABOUT</a>
         <a href="#contact" className="hover:opacity-70 transition-opacity">CONTACT</a>
       </div>

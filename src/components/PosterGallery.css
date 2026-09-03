@@ -1,15 +1,26 @@
-.poster-card {
-  animation: float 6s ease-in-out infinite;
+/* Poster Gallery 3D Perspective & Motion Styles */
+
+.poster-tilt-card {
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 
-@keyframes float {
-  0% {
-    transform: translateY(0px);
+.poster-tilt-card:hover {
+  z-index: 30;
+}
+
+/* Smooth ambient pulse animations */
+@keyframes ambient-glow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
   }
   50% {
-    transform: translateY(-12px);
+    opacity: 0.6;
+    transform: scale(1.05);
   }
-  100% {
-    transform: translateY(0px);
-  }
+}
+
+.animate-ambient-glow {
+  animation: ambient-glow 8s ease-in-out infinite;
 }
